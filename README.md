@@ -26,3 +26,4 @@ The module is wired to SPI0 on the Pico and powered with 3.3V. Output is printed
 
 --- 
 
+![image](https://github.com/user-attachments/assets/19fa6276-0f14-4e63-a0c3-d073e7b1ee92)
