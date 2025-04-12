@@ -57,7 +57,7 @@ As shown in the output, when an RFID card is brought near the reader, the MFRC52
 
 # Credits
 
-This project builds on information from the MFRC522 datasheet and open-source libraries, especially the MFRC522 Arduino Library by Miguel Balboa.
+This project builds on information from the MFRC522 datasheet and open-source libraries, especially the [MFRC522 Arduino Library by Miguel Balboa](https://github.com/miguelbalboa/rfid).
 
 The low-level RFID logic, initialization routines, and card detection flow were adapted from these sources and rewritten to work with the Raspberry Pi Pico’s C SDK. Debugging and adjustments were guided with assistance.
 
