@@ -27,3 +27,9 @@ The module is wired to SPI0 on the Pico and powered with 3.3V. Output is printed
 --- 
 
 ![image](https://github.com/user-attachments/assets/19fa6276-0f14-4e63-a0c3-d073e7b1ee92)
+
+### read_register()
+This function sends a request to the MFRC522 to read the value stored in one of its internal registers. The register address is shifted left and combined with a special bit to tell the chip we want to read. After pulling the chip select (CS) pin low to start communication, we send the request and then read the response byte back from the chip. Once we’re done, we pull CS high to end the communication.
+
+### write_register()
+This function writes a value to one of the MFRC522’s internal registers. Like with reading, we format the register address first — this time with a “write” indicator — and send it along with the data we want to store. Pulling CS low starts the SPI communication, and pulling it back high finishes it.
